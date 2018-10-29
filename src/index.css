@@ -12,3 +12,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.grid aside, .grid main{
+  padding: 1em;
+}
+
+.user{
+  background-color: #eee;
+  padding: 1em;
+  margin: 10px 0px;
+  display: flex;
+}
+
+.user:hover{
+  cursor: pointer;
+  background-color: #bbb;
+}
+
+.user button{
+  background-color: red;
+  color: #fff;
+  padding: .5em 1em;
+  border: none;
+  margin-left: auto;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.user button:hover{
+  background-color: darkred;
+}
