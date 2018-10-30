@@ -57,6 +57,8 @@ class App extends Component {
       selectedUserId: null,
       users: [...usersMockUp],
     };
+    this.selectUser = this.selectUser.bind(this);
+    this.deleteUser = this.deleteUser.bind(this);
   }
 
   deleteUser(id, e) {
