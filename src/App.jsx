@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import UserCard from './components/UserCard';
-import './App.css';
 
 const usersMockUp = [
   {
@@ -61,8 +60,7 @@ class App extends Component {
     this.deleteUser = this.deleteUser.bind(this);
   }
 
-  deleteUser(id, e) {
-    e.stopPropagation();
+  deleteUser(id) {
     const { selectedUserId, users } = this.state;
     const newUsers = [...users].filter(user => user.id !== id)
       .map((user) => {

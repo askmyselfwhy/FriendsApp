@@ -5,12 +5,9 @@ const UserCard = (props) => {
   const {
     onSelectUser, onDeleteUser, user, isSelected,
   } = props;
-  function handleKeyPress() {
-
-  }
   return (
     <li className={`user-card ${isSelected && 'user-card--selected'}`}>
-      <button className="content" type="button" onClick={onSelectUser.bind(this, user.id)} onKeyPress={handleKeyPress}>
+      <button className="content" type="button" onClick={onSelectUser.bind(this, user.id)}>
         <div>
           <p>
             UserID:
@@ -21,8 +18,8 @@ const UserCard = (props) => {
             {user.name}
           </p>
         </div>
-        <button type="button" className="user-card__btn-delete" onClick={onDeleteUser.bind(this, user.id)}>X</button>
       </button>
+      <button type="button" className="user-card__btn-delete" onClick={onDeleteUser.bind(this, user.id)}>X</button>
     </li>
   );
 };

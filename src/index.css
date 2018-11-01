@@ -25,6 +25,9 @@ code {
 .layout__left, .layout__right{
   padding: 1em;
 }
+.user-card{
+  position: relative;
+}
 .user-card .content{
   background-color: #eee;
   padding: 1em;
@@ -41,6 +44,9 @@ code {
   background-color: rgb(170, 169, 169);
 }
 .user-card__btn-delete{
+  position: absolute;
+  top: 1em;
+  right: 1em;
   background-color: red;
   color: #fff;
   padding: .5em 1em;
